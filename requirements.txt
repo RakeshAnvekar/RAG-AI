@@ -1,0 +1,31 @@
+# ------------------ Core LangChain libraries ------------------
+
+langchain         # Main LangChain framework for building LLM-based pipelines, chains, and tools.
+langchain-core    # Core components of LangChain used internally by advanced chains (optional if you already have 'langchain').
+langchain-community  # Community-contributed tools, including PDF loaders and integrations not in the core library.
+
+# ------------------ PDF processing libraries ------------------
+
+pypdf             # Library to read, parse, and manipulate PDF files (text extraction, metadata).
+pymupdf           # Fast PDF reader library (used by PyMuPDFLoader) for extracting text, pages, and metadata efficiently.
+
+# ------------------ Embedding and vector store libraries ------------------
+
+sentence-transformers  # Library to load transformer models (like 'all-MiniLM-L6-v2') and generate vector embeddings for text.
+faiss-cpu              # Facebook AI Similarity Search, used for efficient vector similarity search (optional if using ChromaDB backend only).
+chromadb               # Vector database to store embeddings, support similarity queries, and persist them on disk.
+
+# ------------------ Data handling and utilities ------------------
+
+numpy            # Numerical Python library for arrays and mathematical operations (embeddings are NumPy arrays).
+uuid             # For generating unique IDs for each document or chunk in the vector store.
+pathlib          # Object-oriented file path handling (better than plain strings for file system operations).
+
+# ------------------ LLM and utility libraries ------------------
+
+langchain-groq    # Integration with Groq LLM for text generation, used for answering questions using retrieved context.
+colorama          # Adds colored output to the console (so you can print Answer, Sources, Confidence in different colors).
+python-dotenv     # Loads environment variables from a `.env` file (like API keys) securely.
+
+#
+streamlit
