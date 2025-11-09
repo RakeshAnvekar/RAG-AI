@@ -28,4 +28,4 @@ colorama          # Adds colored output to the console (so you can print Answer,
 python-dotenv     # Loads environment variables from a `.env` file (like API keys) securely.
 
 #
-streamlit
+streamlits
